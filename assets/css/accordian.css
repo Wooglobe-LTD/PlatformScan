@@ -1,0 +1,37 @@
+.accordion {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.accordion .ui-accordion-content {
+    background-color: #f3f3f3;
+    width: 100%;
+    color: #777;
+    font-size: 0.875em;
+    line-height: 1;
+    min-height: 400px;
+}
+
+.accordion .ui-accordion-content > * {
+
+}
+
+.accordion .ui-accordion-header {
+    color: white;
+    line-height: 2.625;
+    display: block;
+    font-size: 0.8125em;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.accordion .ui-accordion-header {
+    background-color: #389abe;
+    background-image: -moz-linear-gradient(top, #fa130c 0%, #dc621e 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa0707), color-stop(100%m #dc621e));
+    background-image: -webkit-linear-gradient(top, #fa0303 0%, #dc631e 100%);
+    background-image: -o-linear-gradient(top, #fa0303 0%,#dc621e 100%);
+    background-image: -ms-linear-gradient(top, #d50000 0%,#dc621e 100%);
+    background-image: linear-gradient(to bottom,  #d50000 0%,#d50000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa9300', endColorstr='#dc621e',GradientType=0 );
+}

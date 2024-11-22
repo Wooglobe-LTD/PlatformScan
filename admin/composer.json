@@ -1,0 +1,39 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"slack": "https://codeigniterchat.slack.com",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require": {
+		"php": ">=5.3.7",
+		"phpmailer/phpmailer": "~6.0",
+		"anlutro/curl":"*",
+		"mpdf/mpdf":"*",
+		"google/apiclient":"^2.0",
+		"anod/gmail-imap":"*",
+		"facebook/graph-sdk":">=5.0",
+		"tedivm/fetch": "0.7.*",
+		"aws/aws-sdk-php": ">=3.87",
+		"shotstack/shotstack-sdk-php": "^0.0.17",
+		"spipu/html2pdf": "^5.2",
+		"paypal/paypal-checkout-sdk": "^1.0",
+		"paypal/rest-api-sdk-php": "*",
+		"srmklive/flysystem-dropbox-v2": "^1.0",
+		"spatie/dropbox-api": "^1.20",
+		"kunalvarma05/dropbox-php-sdk": "^0.4.0",
+		"php-ffmpeg/php-ffmpeg": "^0.19.0"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"require-dev": {
+		"mikey179/vfsstream": "1.1.*",
+		"phpunit/phpunit": "4.* || 5.*"
+	}
+}

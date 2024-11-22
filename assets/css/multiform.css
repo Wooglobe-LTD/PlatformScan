@@ -1,0 +1,67 @@
+
+/*form styles*/
+#msform {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 10px;
+    color: white;
+    background: #b0bec5;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    /*position: relative;*/
+    z-index: 99;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 110px;
+    height: 2px;
+    background: #b0bec5;
+    position: absolute;
+    left: -52px;
+    top: 25px;
+    z-index: 1;
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #f5544d;
+    color: white;
+    z-index: 99;
+}
