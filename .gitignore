@@ -16,11 +16,11 @@ admin/app/config/*.json
 admin/app/config/constants.php
 lanuages.json
 admin/assets/file_manager.*
-
 api/app/config/config.php
 api/app/config/database.php
 app/config/config.php
 app/config/database.php
+admin/app/logs/mrss_queue_logs.logs
 **/app/logs/log-*.php
 !**/app/logs/index.html
 */cache/*
